@@ -4,7 +4,7 @@ var ContactView = Backbone.View.extend({
 	initialize: function() {
 		this.render();
 	},
-	template: Handlebars.compile($('#contact-template)').text() ),
+	template: _.template($('#contact-template').html() ),
 
 	render: function() {
 		this.$el.html(this.template(this.model.attributes));

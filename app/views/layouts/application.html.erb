@@ -3,12 +3,13 @@
 <head>
   <title>Contacts</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
 </head>
 <body>
-<script type="text/javascript" id="contact-template">
-	<h2>{{ firstName }} {{ lastName }}</h2>
-	<p>Gender: {{ gender }}</p>
-	<p>Phone Number: {{ phone }}</p>
+<script type="text/template" id="contacts-template">
+	<h2><%%= firstName %> <%%= lastName %></h2>
+	<p><%%=  gender %></p>
+	<p><%%=  phone %></p>
 </script>
 
 <%= yield %>

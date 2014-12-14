@@ -1,7 +1,17 @@
+var contactsCollection = new ContactsCollection({});
+
+
 var contactsCollection = new ContactsCollection();
 
-contactsCollection.fetch();
+contactsCollection.fetch().done(function(){
+	var contactsCollectionView = new ContactsCollectionView({
+		$el: $('.contacts'),
+		collection: contactsCollection
+	})
+});
 
-Handlebars.registerHelper('debugger', function() {
-	debugger;
-})
+var contactsRouter = new ContactsRouter({
+	collection: contactsCollection
+});
+
+Backbone.history.start();
