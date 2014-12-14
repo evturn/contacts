@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require underscore
 //= require backbone
 //= require_tree ./backbone/routers
@@ -19,5 +18,6 @@
 //= require_tree ./backbone/collections
 //= require_tree ./backbone/collection-views
 //= require_tree ./backbone/model-views
+//= require jquery_ujs
 //= require turbolinks
 //= require_tree .
