@@ -3,12 +3,17 @@
 <head>
   <title>Contacts</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
 </head>
 <body>
+<script type="text/javascript" id="contact-template">
+	<h2>{{ firstName }} {{ lastName }}</h2>
+	<p>Gender: {{ gender }}</p>
+	<p>Phone Number: {{ phone }}</p>
+</script>
 
 <%= yield %>
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 </body>
 </html>
