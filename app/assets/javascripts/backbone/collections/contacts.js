@@ -1,1 +1,3 @@
-var ContactsCollection = Backbone.Collection.extend({});
+var ContactsCollection = Backbone.Collection.extend({
+	
+});
