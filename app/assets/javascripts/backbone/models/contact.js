@@ -4,6 +4,6 @@ var Contact = Backbone.Model.extend({
 		lastName: "Doe"
 	},
 	fullName: function() {
-		this.firstName + " " + this.lastName;
+		this.get('firstName') + " " + ('this.lastName');
 	}
 });
